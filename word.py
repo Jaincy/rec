@@ -111,4 +111,5 @@ frag_df['content'] = frag_df['content'].apply(lambda x: translate(x))
 frag_df['content_words'] = frag_df['content'].apply(
     lambda x: jieba.analyse.extract_tags(x, topK=6, withWeight=False, allowPOS=()))
 
+
 frag_df.to_csv("./t_content.xlsx")
