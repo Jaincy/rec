@@ -1,19 +1,7 @@
-﻿import re
-
-import jieba
-import jieba.analyse
-import pymysql
-from pyspark import SparkConf
-from pyspark.sql import SparkSession
-from pyspark.sql import SQLContext
-import pymysql
-import MySQLdb
+﻿import mysql.connector
 import pandas
-import mysql.connector
-
 from numpy import *
-from scipy.spatial.distance import pdist
-from scipy.spatial.distance import cosine
+
 
 connection = mysql.connector.connect(host="rm-bp1o0v1268qba8fwyzo.mysql.rds.aliyuncs.com", port=3306, user="fddsh_ro",
                                      password="776b1418FD", database="resourcesystem", charset='utf8')
